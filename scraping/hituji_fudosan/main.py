@@ -25,7 +25,7 @@ def base(filename):
         rent = prices[0].get_text()
         fee = prices[1].get_text()
         result.append([url, district, station, rent, fee])
-        print(f'finished{len(result)} / {len(house_list)}')
+        print(f'finished {len(result)} / {len(house_list)}')
         time.sleep(3)
 
     f = open(filename + '.csv', 'w', newline='')
